@@ -2,7 +2,7 @@ import { Image } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 
 const Navigation = () => {
-  const setActiveclassName = ({ isActive }) => (isActive ? "active" : undefined)
+  const setActiveClass = ({ isActive }) => (isActive ? "active" : undefined)
 
   return (
 
@@ -15,13 +15,13 @@ const Navigation = () => {
           <div className="collapse navbar-collapse">
             <NavLink
               to="/"
-              classNameName={setActiveclass}
+              className={setActiveClass}
               id="NavLink"
             > Inicio
             </NavLink>
             <NavLink
               to="/favoritos"
-              classNameName={setActiveclass}
+              className={setActiveClass}
               id="NavLink"
             > Favoritos
             </NavLink>
