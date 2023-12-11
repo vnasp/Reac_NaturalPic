@@ -25,7 +25,7 @@ const results = resultadoBusqueda.length
     <Container className="my-3">
       <Row className="d-flex justify-content-between align-items-center">
         <Col>
-          Hay {results} fotografías
+          Hay {results} fotografía(s)
         </Col>
         <Col></Col>
         <Col></Col>
