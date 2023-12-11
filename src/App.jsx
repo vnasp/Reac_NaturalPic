@@ -10,7 +10,7 @@ import NotFound from "./views/NotFound"
 
 const App = () => {
   return (
-    <div>
+    <>
       <Navigation />
       <Routes>
         <Route
@@ -27,7 +27,7 @@ const App = () => {
         />
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 };
 export default App;

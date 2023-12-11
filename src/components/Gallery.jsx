@@ -17,8 +17,8 @@ const Gallery = () => {
     setPhotos(newPhotos)
   }
   return (
-    <Container className="flex-fill vh-100 bg-white overflow-x-scroll">
-      <Row xs={1} md={4} className="g-3 pb-3 mb-3">
+    <Container className="flex-fill bg-white overflow-x-scroll">
+      <Row xs={1} md={2} lg={4} className="g-3 pb-3 mb-3">
         {resultadoBusqueda.map((photo) => (
           <Col key={photo.id} className="position-relative" onClick={() => addFavorites(photo.id)}>
             <Card>
