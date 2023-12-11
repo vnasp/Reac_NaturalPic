@@ -1,18 +1,16 @@
-import { Image } from "react-bootstrap"
+import { Navbar, Nav, Container,Image } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 
 const Navigation = () => {
   const setActiveClass = ({ isActive }) => (isActive ? "active" : undefined)
 
   return (
-
-      <nav className="navbar navbar-expand-lg navbar-dark bg-success bg-gradient">
-        <div className="container-fluid">
-          <a className="navbar-brand ps-3" href="#"> <h1><Image src="logo.png" />NaturalPic</h1></a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse">
+    <Navbar expand="lg" className="bg-success bg-gradient navbar-dark">
+      <Container>
+        <Navbar.Brand href="#home"><h1><Image src="logo.png" />NaturalPic</h1></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
             <NavLink
               to="/"
               className={setActiveClass}
@@ -25,9 +23,10 @@ const Navigation = () => {
               id="NavLink"
             > Favoritos
             </NavLink>
-          </div>
-        </div>
-      </nav>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   )
 }
 export default Navigation
