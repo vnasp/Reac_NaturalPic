@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  font-family:'Poppins';
+  background-color:white;
+  height:100vh;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Navbar,Footer */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.active {
+  color: gold;
+  font-weight: 700;
+}
+
+#NavLink {
+  padding-left:2rem;
+}
+
+/* gallery */
+.grid-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.photo {
+  box-shadow: rgba(0, 0, 0, 0.3) 1.95px 1.95px 2.6px;
+
+}
+.photo-alt {
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-left:0.5rem;
+  width:100%
+}
+.photo-icon {
+  top: 0;
+  right: 0;
+  margin:10px;
+}
