@@ -12,7 +12,7 @@ const NotFound = () => {
         </Row>
         <Row>
           <Col className="text-center">
-            <Image src="/logo.png" />
+            <Image src="./logo.png" />
           </Col>
         </Row>
       </Container>

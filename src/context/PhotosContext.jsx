@@ -2,7 +2,7 @@ import { createContext, useState, useEffect } from "react"
 
 export const PhotosContext = createContext()
 
-const PHOTO_URL = "/photos.json"
+const PHOTO_URL = "./photos.json"
 
 const PhotosProvider = ({ children }) => {
     const [photos, setPhotos] = useState([])
